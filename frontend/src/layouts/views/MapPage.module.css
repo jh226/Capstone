@@ -1,0 +1,9 @@
+.mapContainer {
+  width: 100%;
+  height: 800px;
+}
+@media (max-width: 576px) {
+  .mapContainer {
+    z-index: 1;
+  }
+}
