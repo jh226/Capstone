@@ -5,9 +5,27 @@
   grid-template-rows: 80vh;
 }
 
+.table_container{
+  overflow: auto;
+  overflow-x: auto;
+  white-space: nowarp;
+  max-height: 20vh;
+}
+
+th{
+  background-color: rgba(1, 1, 1, 0) !important;
+}
+
+td{
+  background-color: rgba(1, 1, 1, 0) !important;
+}
+
+.table_header{
+  font-size: smaller;
+}
+
 .select {
   width: 100%;
-
   background-color: #212529 !important;
   border-color: #212529 !important;
 }
@@ -18,7 +36,6 @@
   margin: 30px;
   margin-top: 100px;
   align-items: center;
-  height: 90vh;
 }
 
 .info {
@@ -65,7 +82,6 @@
 .history {
   margin-top: 80px;
   padding-left: 10px;
-  height: 90vh;
   background-color: rgba(1, 1, 1, 0.05);
 }
 
@@ -91,11 +107,17 @@
   margin: 8px;
 }
 
+.contol_info{
+  width: 300px;
+  min-width: 200px;
+  margin: 8px;
+}
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 100px;
   }
 
   .profileImage {

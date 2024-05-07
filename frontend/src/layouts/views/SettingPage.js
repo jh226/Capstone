@@ -9,7 +9,7 @@ import { useAuth } from "../../Login.Status";
 import styles from "./Setting.module.css";
 
 function SettingPage() {
-  const { isLoggedIn } = useAuth();
+  const { isLoggedIn, username } = useAuth();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("All");
 
@@ -37,21 +37,21 @@ function SettingPage() {
           <Tab eventKey="All" title="전체">
             <Row>
               <Col lg="7" xxl="8" md="12" className={styles.table}>
-                <ObjTable active={activeTab}/>
+                <ObjTable active={activeTab} userid={username}/>
               </Col>
             </Row>
           </Tab>
           <Tab eventKey="Active" title="실행 중">
             <Row>
-              <Col lg="7" xxl="8" md="12" className={styles.table}>
-                <ObjTable active={activeTab}/>
+              <Col lg="7" xxl="8" md="12" className={styles.table} >
+                <ObjTable active={activeTab} userid={username}/>
               </Col>
             </Row>
           </Tab>
           <Tab eventKey="InActive" title="중단 됨">
             <Row>
               <Col lg="7" xxl="8" md="12" className={styles.table}>
-                <ObjTable active={activeTab}/>
+                <ObjTable active={activeTab} userid={username}/>
               </Col>
             </Row>
           </Tab>

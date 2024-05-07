@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./MapPage.module.css";
 import { useAuth } from "../../Login.Status";
-import { useDevice } from "../../device.Status";
 import { useNavigate } from "react-router-dom";
 
 const MapPage = () => {
   const { isLoggedIn } = useAuth();
-  const { devices } = useDevice();
   const navigate = useNavigate();
 
   const [markers, setMarkers] = useState([]);
@@ -63,8 +61,7 @@ const MapPage = () => {
         const deviceList = await getDeviceList();
 
         deviceList.forEach((device) => {
-          const { latitude, longitude } = parseLocation(device.location);
-          const position = new window.kakao.maps.LatLng(latitude, longitude);
+          const position = new window.kakao.maps.LatLng(parseFloat(device.latitude), parseFloat(device.longitude));
           const marker = new window.kakao.maps.Marker({
             position: position,
           });
@@ -89,11 +86,6 @@ const MapPage = () => {
       }
     };
   }, [isLoggedIn, navigate]);
-
-  const parseLocation = (location) => {
-    const [latitude, longitude] = location.split("-");
-    return { latitude: parseFloat(latitude), longitude: parseFloat(longitude) };
-  };
 
   return <div id="map" className={styles.mapContainer}></div>;
 };
