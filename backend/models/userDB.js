@@ -1,5 +1,21 @@
 const db = require('../database/db');
 
+exports.addSensor = (device_num, temp, humi) => {
+    var today = new Date();
+
+    var year = today.getFullYear();
+    var month = ('0' + (today.getMonth() + 1)).slice(-2);
+    var day = ('0' + today.getDate()).slice(-2);
+    var dateString = year + '-' + month  + '-' + day
+
+    return new Promise((resolve, reject) => {
+        db.query(`INSERT INTO sensor VALUES(?,?,?,?,?)`,[device_num, temp, humi, dateString, 1], (err, result) => {
+            if (err) reject(err);
+            else resolve(result);
+        });
+    });
+}
+
 //사용자 정보 (이름, 이메일...)
 exports.getUser = (userID) => {
     return new Promise((resolve, reject) => {
