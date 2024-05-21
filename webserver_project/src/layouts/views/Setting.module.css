@@ -1,0 +1,16 @@
+.table_contain {
+  display: flex-end;
+  justify-content: center;
+}
+
+.table {
+  margin-left: 50px;
+  margin-top: 25px;
+  width: 60vw;
+}
+
+@media (max-width: 768px) {
+  .table {
+    margin-left: 25px;
+  }
+}
