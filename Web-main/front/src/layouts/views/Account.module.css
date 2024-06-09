@@ -1,0 +1,137 @@
+.container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 80vh;
+}
+
+.table_container {
+  overflow: auto;
+  overflow-x: auto;
+  white-space: nowarp;
+  max-height: 20vh;
+}
+
+th {
+  background-color: rgba(1, 1, 1, 0) !important;
+}
+
+td {
+  background-color: rgba(1, 1, 1, 0) !important;
+}
+
+.table_header {
+  font-size: smaller;
+}
+
+.select {
+  width: 100%;
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+}
+
+.accountInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.info {
+  width: 50%;
+  min-width: 200px;
+  margin: 20px 0px;
+}
+
+.profileImage {
+  background-color: white;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid #212529;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.radio {
+  margin-right: 30px;
+}
+
+[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 1px gray;
+  border: 4px solid white;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+[type="radio"]:checked {
+  box-shadow: 0 0 0 1px green;
+  background-color: green;
+}
+
+.pwd_btn {
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+}
+
+.history {
+  margin-top: 80px;
+  padding-left: 10px;
+  background-color: rgba(1, 1, 1, 0.05);
+}
+
+.history_title {
+  width: 50%;
+  min-width: 200px;
+  margin: 8px 8px 30px 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.history_label {
+  width: 50%;
+  min-width: 200px;
+  margin: 8px;
+  color: gray;
+  font-size: small;
+}
+
+.history_content {
+  width: 50%;
+  min-width: 200px;
+  margin: 8px;
+}
+
+.contol_info {
+  width: 300px;
+  min-width: 200px;
+  margin: 8px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 100px;
+  }
+
+  .profileImage {
+    width: 50% !important;
+    min-width: 200px;
+  }
+
+  .info {
+    width: 50%;
+    min-width: 200px;
+    margin: auto !important;
+  }
+
+  .info_btn {
+    margin: 10px 40px 0px 40% !important;
+  }
+}
