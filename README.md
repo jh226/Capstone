@@ -1,28 +1,30 @@
 # 스마트 그늘막 통합 관리 시스템
-[SW창의융합 경진대회 발표 판넬.pdf](https://github.com/user-attachments/files/15798840/SW.pdf)
+스마트 그늘막은 폭염 대비를 위해 설치된 장치로, 시민들이 햇볕을 피할 수 있도록 돕고 실시간 기상 정보를 제공하지만, 자동 계폐 기능의 불편함과 비효율적인 관리로 인해 제대로 운영되지 못하고 있다. 바람이 조금만 불어도 그늘막이 접히거나, 필요 시점에 작동하지 않아 시민들의 불편을 초래하며 혈세 낭비로 이어지고 있다. 이러한 문제를 해결하기 위해 IoT 데이터를 통합 관리하는 시스템의 도입이 시급하다.
+
+<div align="center">
+    <img width="500" src="https://github.com/jh226/Capstone/assets/136438531/e399be31-61b4-4b61-b6f9-a04f0513c088" alt="프로젝트 판넬">
+    <p>프로젝트 판넬</p>
+</div>
+
 
 
 ## 프로젝트 기간
 - 2024.03.8 ~ 2024.06.14
 
 ## 개발 언어/환경
-### 웹
-- React
-- MySQL
-- BootStrap
-- Node.js
-- Javascript
-- 사용 API : Kakao Map API
-  
-### 하드웨어(스마트그늘막)
-- Raspberry Pi
-- MQTT
-- Python
+|웹|하드웨어|
+|:---:|:---:|
+|React|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Raspberry Pi&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|
+|MySQL|MQTT|
+|BootStrap|Python|
+|Node.js|
+|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Javascript&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|
+* 사용 API : Kakao Map API
 
 
 ## 최종 PPT
-https://docs.google.com/presentation/d/1omFnGX2H59epd-XK5GCg7cmrur82i3ELfQaEbxG4i3w/edit?usp=sharing
-
+PPT를 통해 상세 설명을 확인 할 수 있습니다!
+- https://docs.google.com/presentation/d/1omFnGX2H59epd-XK5GCg7cmrur82i3ELfQaEbxG4i3w/edit?usp=sharing
 
 |<img width="534" alt="image" src="https://github.com/jh226/Capstone/assets/136438531/49f2feca-d879-4071-9584-0b39020b4bbd">|<img width="452" alt="image" src="https://github.com/jh226/Capstone/assets/136438531/d35ba299-be0c-44c3-a9cd-28964249e31d">|
 |:---:|:---:|
