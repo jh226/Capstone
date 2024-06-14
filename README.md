@@ -24,7 +24,7 @@
 
 ## 최종 PPT🔩
 PPT를 통해 상세 설명을 확인 할 수 있습니다!
-- https://docs.google.com/presentation/d/1omFnGX2H59epd-XK5GCg7cmrur82i3ELfQaEbxG4i3w/edit?usp=sharing
+- https://docs.google.com/presentation/d/1BdKKNuNQcqNqCcLJuW-YUrTXzeZ3M1KiYFW186bydLY/edit?usp=sharing
 
 |<img width="534" alt="image" src="https://github.com/jh226/Capstone/assets/136438531/49f2feca-d879-4071-9584-0b39020b4bbd">|<img width="452" alt="image" src="https://github.com/jh226/Capstone/assets/136438531/d35ba299-be0c-44c3-a9cd-28964249e31d">|
 |:---:|:---:|
