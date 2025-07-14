@@ -28,7 +28,7 @@
 | ![Kakao Map API](https://img.shields.io/badge/Kakao%20Map%20API-FFCD00?style=for-the-badge&logo=kakao&logoColor=000000) | |
 
 
-## 🔩결과
+## 🔩결과물
 <!-- PPT를 통해 상세 설명을 확인 할 수 있습니다
 - https://docs.google.com/presentation/d/1BdKKNuNQcqNqCcLJuW-YUrTXzeZ3M1KiYFW186bydLY/edit?usp=sharing -->
 
